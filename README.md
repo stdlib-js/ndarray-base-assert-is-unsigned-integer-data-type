@@ -41,7 +41,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isUnsignedIntegerDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-unsigned-integer-data-type@esm/index.mjs';
+import isUnsignedIntegerDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-unsigned-integer-data-type@v0.0.1-esm/index.mjs';
 ```
 
 #### isUnsignedIntegerDataType( value )
@@ -82,7 +82,7 @@ bool = isUnsignedIntegerDataType( 'uint32' );
 <body>
 <script type="module">
 
-import isUnsignedIntegerDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-unsigned-integer-data-type@esm/index.mjs';
+import isUnsignedIntegerDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-unsigned-integer-data-type@v0.0.1-esm/index.mjs';
 
 var bool = isUnsignedIntegerDataType( 'binary' );
 // returns false
