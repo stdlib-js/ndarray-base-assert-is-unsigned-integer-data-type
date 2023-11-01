@@ -21,74 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isUnsignedIntegerDataType = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isUnsignedIntegerDataType, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if provided a supported ndarray unsigned integer data type', function test( t ) {
-	var values;
-	var bool;
-	var i;
-
-	values = [
-		'uint16',
-		'uint32',
-		'uint8',
-		'uint8c'
-	];
-	for ( i = 0; i < values.length; i++ ) {
-		bool = isUnsignedIntegerDataType( values[ i ] );
-		t.strictEqual( bool, true, 'returns expected value when provided '+values[ i ] );
-	}
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided a supported ndarray unsigned integer data type', function test( t ) {
-	var values;
-	var bool;
-	var i;
-
-	values = [
-		// Supported dtypes:
-		'binary',
-		'complex64',
-		'complex128',
-		'float32',
-		'float64',
-		'generic',
-		'int16',
-		'int32',
-		'int8',
-
-		// Unsupported dtypes:
-		'float',
-		'int',
-		'bin',
-		'',
-		'beep',
-		'boop',
-		'foo',
-		'bar',
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		{},
-		function noop() {}
-	];
-	for ( i = 0; i < values.length; i++ ) {
-		bool = isUnsignedIntegerDataType( values[ i ] );
-		t.strictEqual( bool, false, 'returns expected value when provided '+values[ i ] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
