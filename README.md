@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isUnsignedIntegerDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-unsigned-integer-data-type@deno/mod.js';
+import isUnsignedIntegerDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-unsigned-integer-data-type@v0.2.0-deno/mod.js';
 ```
 
 #### isUnsignedIntegerDataType( value )
@@ -88,7 +88,7 @@ bool = isUnsignedIntegerDataType( 'uint32' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isUnsignedIntegerDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-unsigned-integer-data-type@deno/mod.js';
+import isUnsignedIntegerDataType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-unsigned-integer-data-type@v0.2.0-deno/mod.js';
 
 var bool = isUnsignedIntegerDataType( 'binary' );
 // returns false
